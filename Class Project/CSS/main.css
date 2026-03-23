@@ -1,0 +1,9 @@
+.sub-section {
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.sub-section:hover {
+    box-shadow: 5px 0px 2px grey, 1px 0px 2px lightgray;
+    border: 1px solid lightgray;
+}
