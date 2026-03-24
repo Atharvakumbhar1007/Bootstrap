@@ -1,19 +1,26 @@
-.sub-section{
-    transition:0.4s;
-    border-radius:10px;
-    gap:16px;
+.sub-section {
+    transition: 0.4s;
+    border-radius: 10px;
+    gap: 16px;
     /* align-items:start;
     border-radius:50%; */
 }
-.sub-section:hover{
-    box-shadow:-5px 0px 2px grey, 1px 0px 2px lightgrey;
-    border:1px solid lightgrey;
+
+.sub-section:hover {
+    box-shadow: -5px 0px 2px grey, 1px 0px 2px lightgrey;
+    border: 1px solid lightgrey;
 }
-.sub-section-icon{
-    background-color:grey;
-    display:flex;
-    align-items:center;
+
+.sub-section-icon {
+    background-color: grey;
+    display: flex;
+    align-items: center;
 }
-.sub-section-icon img{
-    width:48px;
+
+.sub-section-icon img {
+    width: 48px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
