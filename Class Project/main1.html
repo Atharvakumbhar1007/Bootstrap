@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/main.css">
+
+</head>
+<!-- alt+shift+f  proper way of code (proper alignment) -->
+
+<body>
+    <div class="container wrapper mt-4">
+        <div class="navbar navbar-expand-md" id="mynavbar">
+            <button class="navbar-toggler navbar-light bg-light" data-bs-target="#mymenu" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mymenu">
+                <div class="navbar-nav">
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">Gallery</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">Events</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mt-3">
+            <h2>About Us</h2>
+            <div class="row">
+                <div
+                    class="col-lg-6 d-flex sub-section mt-4 p-4 border-top-0 border-bottom-0 border-end-0 border border-dark ">
+                    <div class="sub-section-icon p-2">
+                        <img src="./Images/help.png">
+                        <!-- flat icon: download icon -->
+
+                    </div>
+                    <div class="sub-section-content">
+                        <h3>What We Do</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eaque at hic rerum aspernatur
+                            dolores quam asperiores aliquid voluptates. Excepturi nostrum omnis in sequi quas, quae
+                            accusantium enim voluptates consequuntur?</p>
+
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-6 d-flex sub-section mt-4 p-4 border-top-0 border-bottom-0 border-end-0 border border-dark">
+                    <div class="sub-section-icon2">
+                        <img src="./Images/goal.png" class="rounded-circle">
+                    </div>
+                    <div class="sub-section-content">
+                        <h3>Our Mission</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eaque at hic rerum aspernatur
+                            dolores quam asperiores aliquid voluptates. Excepturi nostrum omnis in sequi quas, quae
+                            accusantium enim voluptates consequuntur?</p>
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-6 d-flex  sub-section p-4 border-top-0 border-bottom-0 border-end-0 border border-dark">
+                    <div class="sub-section-icon3">
+                        <img src="./Images/award.png" class="rounded-circle">
+                    </div>
+                    <div class="sub-section-content">
+                        <h3>Our Goals</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eaque at hic rerum aspernatur
+                            dolores quam asperiores aliquid voluptates. Excepturi nostrum omnis in sequi quas, quae
+                            accusantium enim voluptates consequuntur?</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="mt-4">
+            <h2>Gallery</h2>
+            <div class="carousel slide" data-ride="carousel" id="myslider">
+                <div class="carousel-inner">
+                    <div class="bg-img bg-std active carousel-item" style="background-image: url('./Images/n1.jpg');">
+                        <div class="carousel-caption">
+                            <h2>Title 1</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus ducimus sed, minima
+                                aliquid molestias assumenda, unde numquam adipisci nam deleniti eligendi eaque omnis,
+                                esse voluptatum rem quibusdam architecto est!</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-img bg-std carousel-item" style="background-image: url('./Images/n2.jpg');">
+                        <div class="carousel-caption">
+                            <h2>Title 2</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus ducimus sed, minima
+                                aliquid molestias assumenda, unde numquam adipisci nam deleniti eligendi eaque omnis,
+                                esse voluptatum rem quibusdam architecto est!</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-img bg-std carousel-item" style="background-image: url('./Images/n3.jpg');">
+                        <div class="carousel-caption">
+                            <h2>Title 3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus ducimus sed, minima
+                                aliquid molestias assumenda, unde numquam adipisci nam deleniti eligendi eaque omnis,
+                                esse voluptatum rem quibusdam architecto est!</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-img bg-std carousel-item" style="background-image: url('./Images/n4.jpg');">
+                        <div class="carousel-caption">
+                            <h2>Title 4</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus ducimus sed, minima
+                                aliquid molestias assumenda, unde numquam adipisci nam deleniti eligendi eaque omnis,
+                                esse voluptatum rem quibusdam architecto est!</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#myslider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#myslider">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <div class="carousel-indicators my-indicators">
+                    <div data-bs-slide-to="0" class="active my-ind" data-bs-target="#myslider"></div>
+                    <div data-bs-slide-to="1" data-bs-target="#myslider" class="my-ind"></div>
+                    <div data-bs-slide-to="2" data-bs-target="#myslider" class="my-ind"></div>
+                    <div data-bs-slide-to="3" data-bs-target="#myslider" class="my-ind"></div>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Heading</h1>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus vitae libero?
+                        Cupiditate quo debitis nostrum corrupti tenetur perspiciatis molestias alias esse dolorem
+                        perferendis nam laudantium nobis, sint earum sed!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus vitae libero?
+                        Cupiditate quo debitis nostrum corrupti tenetur perspiciatis molestias alias esse dolorem
+                        perferendis nam laudantium nobis, sint earum sed!
+                    </p>
+                    <button class="btn btn-secondary" type="button">A button</button>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Open
+                Offcanvas slider</button>
+        </section>
+        <!-- carausel: the main slider
+         active: the first image
+         carousel item: each slide in the carousel
+         carousel inner: the container for slides
+         -->
+
+    </div>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
