@@ -148,19 +148,24 @@
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" name="password" placeholder="Enter password" minlength="6" required>
-                            <div class="invalid-feedback text-danger">P                        </div>lease must be over letters</div>
-
-                        <button type="submit" class="btn btn-primary">Login</button>
+                            <div class="invalid-feedback text-danger">                   
+                            </div>Password must be over 5 letters</div>
+                        <div class="form-check mb-3">
+                            <label for="rememberMe" class="form-check-label">Remember me</label>
+                            <input type="checkbox" class="form-check-input" name="rememberMe">
+                           </div>
                     </form>
                     <div class="display-5 mt-5 mb-5">Testing</div>
                 </div>
-                <div class="form-check mb-3">
-                    <label for="rememberMe" class="form-label">Remember me</label>
-                    <input type="checkbox" class="form-check-input" name="rememberMe">
-                </div>
+            </div>   
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" type="submit">Login</button>    
+            <div id="loginAlert" class="alert alert-success alert-dismissible fade show d-none">
+                <!-- Success message will be displayed here-->
+                 Form submitted successfully!
+                 <button class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -179,9 +184,14 @@
                     form.classList.add("was-validated");
                     }
                     else{
+                    loginAlert.classList.remove("d-none");
                         if(form.classList.contains("was-validated"))
                         form.classList.remove("was-validated");
-                        alert("Data submitted successfully");
+                    form.reset();
+                    //remove the alert after 7 seconds
+                    setTimeout(() => {
+                        loginAlert.classList.add("d-none");
+                    },7000);
                     }
                 })
             });
