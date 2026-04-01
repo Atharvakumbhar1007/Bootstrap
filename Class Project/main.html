@@ -149,24 +149,29 @@
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" name="password" placeholder="Enter password" minlength="6" required>
                             <div class="invalid-feedback text-danger">                   
-                            </div>Password must be over 5 letters</div>
+                            </div>Password must be over 5 letters
+                        </div>
                         <div class="form-check mb-3">
-                            <label for="rememberMe" class="form-check-label">Remember me</label>
                             <input type="checkbox" class="form-check-input" name="rememberMe">
-                           </div>
+                            <label for="rememberMe" class="form-check-label">
+                                Remember me
+                            </label>
+                        </div>
+                        <div id="loginAlert" class="alert alert-success alert-dismissible fade show d-none">
+                                    <!-- Success message will be displayed here-->
+                                    Form submitted successfully!
+                                <button class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="submit">Login</button>  
+                        </div>
                     </form>
-                    <div class="display-5 mt-5 mb-5">Testing</div>
                 </div>
             </div>   
         </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="submit">Login</button>    
-            <div id="loginAlert" class="alert alert-success alert-dismissible fade show d-none">
-                <!-- Success message will be displayed here-->
-                 Form submitted successfully!
-                 <button class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-    </div>
+          
+            
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -176,7 +181,7 @@
             document.addEventListener("DOMContentLoaded", (ev) =>{
                 const form = document.querySelector("#loginForm");
                 form.addEventListener("submit", (ev) =>{
-                    if(form.checkValidity()){
+                    if(!form.checkValidity()){
                         ev.preventDefault();
                         ev.stopPropagation();
                     
