@@ -22,7 +22,7 @@
     width: 48px;
 }
 
-body {
+.body {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -35,4 +35,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 500px;
+}
+.my-indicartor .my-ind {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
