@@ -191,6 +191,20 @@
                                 Remember me
                             </label>
                         </div>
+                        <div class="mb-3">
+                            <label for="Itype" class="form-label">Login Type</label>
+                            <inut type="hidden" name="Itype" id="Itype">
+                            <div class="dropdown" data-bs-toggle="dropdown" id="ddItype">
+                                <button class="btn btn-primary dropdown-toggle">
+                                    Choose Login Type</button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item"
+                                        data-Itype="cust">Customer</a>
+                                        <a href="#" class="dropdown-item" 
+                                        data-Itype="sales">Sales</a>
+                                    </div>
+                            </div>
+                        </div>
                         <div id="loginAlert" class="alert alert-success alert-dismissible fade show d-none">
                                     <!-- Success message will be displayed here-->
                                     Form submitted successfully!
@@ -271,6 +285,21 @@
         <script>
             document.addEventListener("DOMContentLoaded", (ev) =>{
                 const form = document.querySelector("#loginForm");
+                const loginAlert = document.querySelector("#loginAlert");
+                const items = form.querySelectorAll("#ddItype .dropdown-item");
+                const inputItype = form.querySelector("#Itype");
+                const btn = document.querySelector("#ddItype .dropdown-toggle");
+
+                items.foeeach(item =>{
+                    item.addEventListener("click", (ev) =>{
+                        ev.preventDefault();
+
+                        const value = ev.target.getAttribute("data-itype");
+                        inputItype.value = value;
+
+                        btn.innertext = ev.target.innertext;
+                    })
+                })
                 form.addEventListener("submit", (ev) =>{
                     if(!form.checkValidity()){
                         ev.preventDefault();
