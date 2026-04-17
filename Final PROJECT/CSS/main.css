@@ -1,3 +1,25 @@
 .bg-dark {
     background-color: #4a4949 !important;
 }
+
+.navbar-custom {
+    background-color: #6c757d; /* grey */
+}
+.logo{
+    padding: 0 20px;
+    height: 100%;
+}
+.swicher-bar{
+    display: flex;
+    align-items: center;
+    background: var(--color-bg-dark);
+    border-bottom: 1px solid var(--color-border);
+    height: var(--header-height);
+    position: relative;
+    z-index: 22;
+}
+
+.bg-dark{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
