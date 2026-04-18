@@ -19,7 +19,61 @@
     z-index: 22;
 }
 
-.bg-dark{
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+header {
+  position: relative;
+  z-index: 10;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020617; /* fallback */
+}
+
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  
+  background: radial-gradient(circle at 20% 20%, #0f2a4a 0%, transparent 40%),
+              linear-gradient(135deg, #020617 0%, #0b1a2f 50%, #020617 100%);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(34,197,94,0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #14883f, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-dropdown {
+  background-color: #0b1a2f; 
+  border: none;
+}
+
+.custom-dropdown .dropdown-item {
+  color: #fff;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #13294b; 
+}
+
+.btn-success {
+  background-color: #22c55e;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #16a34a;
 }
